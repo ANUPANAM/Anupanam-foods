@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Anupanam Foods Gallery | Best Family Restaurant in Madurai</title>
+
+    <meta name="description"
+        content="Explore the food gallery of Anupanam Foods, a family restaurant in Madurai serving authentic South Indian food.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            background: #ffffff;
+        }
+
+        /* ================= HERO ================= */
+
+        .gallery-hero {
+
+            min-height: 300px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(15, 24, 21, 0.86),
+                    rgba(15, 24, 21, 0.86)
+                ),
+                url("hero.webp") center/cover no-repeat;
+        }
+
+        .gallery-small-title {
+
+            color: #e9a24f;
+
+            letter-spacing: 5px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            margin-bottom: 15px;
+        }
+
+        .gallery-hero h1 {
+
+            font-family: Georgia, serif;
+
+            font-size: 55px;
+
+            margin-bottom: 15px;
+        }
+
+        .gallery-hero p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        /* ================= GALLERY ================= */
+
+        .gallery-section {
+
+            padding: 65px 0 80px;
+        }
+
+        .gallery-heading {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+        .gallery-heading h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 40px;
+
+            margin-bottom: 10px;
+        }
+
+        .gallery-heading p {
+
+            color: #666;
+
+            margin: 0;
+        }
+
+
+        /* ================= IMAGE ================= */
+
+        .gallery-item {
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 12px;
+
+            height: 280px;
+
+            background: #eee;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+
+        }
+
+        .gallery-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+
+            transform: scale(1.08);
+        }
+
+
+        /* IMAGE OVERLAY */
+
+        .gallery-overlay {
+
+            position: absolute;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            padding: 45px 20px 18px;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,0.75)
+                );
+
+            color: white;
+        }
+
+        .gallery-overlay h3 {
+
+            font-family: Georgia, serif;
+
+            font-size: 21px;
+
+            margin: 0;
+        }
+
+
+        /* ================= ORDER ================= */
+
+        .order-section {
+
+            background: #f6f7ef;
+
+            border-radius: 14px;
+
+            padding: 40px;
+
+            margin-bottom: 70px;
+        }
+
+        .order-label {
+
+            color: #d88924;
+
+            letter-spacing: 4px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+        .order-section h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: 32px;
+
+            margin: 10px 0;
+        }
+
+        .order-section p {
+
+            color: #555;
+
+            margin-bottom: 0;
+        }
+
+
+        .order-btn {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            color: white;
+
+            padding: 13px 28px;
+
+            border-radius: 30px;
+
+            font-weight: 600;
+
+            margin: 5px;
+
+            transition: 0.3s;
+        }
+
+        .order-btn:hover {
+
+            color: white;
+
+            transform: translateY(-2px);
+
+            opacity: 0.9;
+        }
+
+        .zomato {
+
+            background: #e23744;
+        }
+
+        .swiggy {
+
+            background: #fc8019;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            .gallery-hero {
+
+                min-height: 250px;
+            }
+
+            .gallery-hero h1 {
+
+                font-size: 40px;
+            }
+
+            .gallery-hero p {
+
+                padding: 0 20px;
+
+                font-size: 15px;
+            }
+
+            .gallery-section {
+
+                padding: 45px 15px 60px;
+            }
+
+            .gallery-heading h2 {
+
+                font-size: 32px;
+            }
+
+            .gallery-item {
+
+                height: 250px;
+            }
+
+            .order-section {
+
+                padding: 25px 20px;
+
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+
+            <img src="logo.png"
+                 alt="ANUPANAM FOODS Logo"
+                 width="55"
+                 height="55">
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Order Online
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="gallery-hero">
+
+    <div>
+
+        <div class="gallery-small-title">
+            OUR GALLERY
+        </div>
+
+        <h1>Delicious Moments</h1>
+
+        <p>
+            Explore our delicious food and discover
+            the authentic South Indian taste of
+            Anupanam Foods.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="gallery-heading">
+
+            <h2>Our Food Gallery</h2>
+
+            <p>
+                A glimpse of our delicious food
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food1.webp"
+                         alt="Anupanam Foods South Indian food">
+
+                    <div class="gallery-overlay">
+
+                        <h3>South Indian Special</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food2.webp"
+                         alt="Anupanam Foods restaurant food">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Fresh & Delicious</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food3.webp"
+                         alt="South Indian dishes at Anupanam Foods">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Authentic Taste</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food4.webp"
+                         alt="Delicious food at Anupanam Foods">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Our Favourite Dishes</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food5.webp"
+                         alt="Fresh food at Anupanam Foods">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Freshly Prepared</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food7.webp"
+                         alt="Anupanam Foods special food">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Food Moments</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 7 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food8.webp"
+                         alt="Anupanam Foods South Indian dishes">
+
+                    <div class="gallery-overlay">
+
+                        <h3>South Indian Flavours</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 8 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food9.webp"
+                         alt="Anupanam Foods food collection">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Delicious Collection</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 9 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food10.webp"
+                         alt="Anupanam Foods fresh food">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Made With Care</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 10 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img src="food11.webp"
+                         alt="Anupanam Foods special dishes">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Special Moments</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ORDER ONLINE ================= -->
+
+<section class="container">
+
+    <div class="order-section">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-7">
+
+                <div class="order-label">
+                    ORDER ONLINE
+                </div>
+
+                <h2>
+                    Your Favourite Food,<br>
+                    Just a Click Away
+                </h2>
+
+                <p>
+                    Order your favourite dishes from
+                    Anupanam Foods through your preferred
+                    food delivery platform.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-5 text-md-end text-center mt-4 mt-md-0">
+
+                <a href="https://www.zomato.com/madurai/anupanam-foods-othakadai/order"
+                   target="_blank"
+                   class="order-btn zomato">
+
+                    Order on Zomato →
+
+                </a>
+
+
+                <a href="https://www.swiggy.com/city/madurai/anupanam-foods-kk-nagar-uthangudi-rest1411006"
+                   target="_blank"
+                   class="order-btn swiggy">
+
+                    Order on Swiggy →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <h3>
+                    ANUPANAM FOODS
+                </h3>
+
+                <p>
+                    Authentic South Indian vegetarian food in Madurai.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h3>
+                    Address
+                </h3>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Bharathi Infinity Hospital Campus
+                </p>
+
+                <p>
+                    Valarnagar Backside, Trichy - Madurai Hwy
+                </p>
+
+                <p>
+                    Othakadai, Madurai - 625107
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +91 89258 33211
+                </p>
+
+                <p>
+                    <i class="bi bi-whatsapp"></i>
+                    WhatsApp: 89258 33211
+                </p>
+
+
+                <h5 class="mt-4">
+                    Payment Methods
+                </h5>
+
+
+                <div class="payment-icons">
+
+                    <img src="cash.webp"
+                         alt="Cash Payment">
+
+                    <img src="visa.webp"
+                         alt="Visa Payment">
+
+                    <img src="gpay.webp"
+                         alt="Google Pay">
+
+                    <img src="upi.webp"
+                         alt="UPI Payment">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 ANUPANAM FOODS. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
