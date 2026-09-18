@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anupanam.github.io/Anupanam-foods/sitemap.xml
